@@ -71,22 +71,18 @@
 <a href="mantra.mp4" download="Solo leveling.mp4">
     <button>Download Video</button>
 </a>
-
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Responsive Page</title>
   <style>
-    * {
+    body {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-    }
-
-    body, html {
-      height: 100%;
       font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
     }
 
     .container {
@@ -120,57 +116,18 @@
     .button:hover {
       background-color: #0056b3;
     }
-
-    /* Desktop */
-    @media (min-width: 1024px) {
-      .container {
-        width: 80%;
-        margin: 0 auto;
-      }
-
-      .header {
-        font-size: 3rem;
-      }
-
-      .content {
-        font-size: 1.5rem;
-      }
-
-      .button {
-        font-size: 1.2rem;
-        padding: 20px 40px;
-      }
-    }
-
-    /* Mobile */
-    @media (max-width: 767px) {
-      .header {
-        font-size: 1.5rem;
-      }
-
-      .content {
-        font-size: 1rem;
-      }
-
-      .button {
-        padding: 10px 20px;
-        font-size: 0.9rem;
-      }
-    }
-
   </style>
 </head>
 <body>
 
   <div class="container">
     <div class="header">Responsive Web Design</div>
-    <div class="content">This layout changes depending on your screen size. Try resizing the browser or use a mobile device!</div>
+    <div class="content">This layout adjusts to different screen sizes automatically. Try resizing your browser or open it on a mobile device!</div>
     <button class="button">Click Me</button>
   </div>
 
 </body>
-
-
+</html>
 
 
 </html>
