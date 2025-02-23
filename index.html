@@ -73,48 +73,100 @@
 </a>
 
 
- <!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Responsive Webpage</title>
-    <style>
-        /* General Styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        /* Responsive Container */
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+    body, html {
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
 
-        /* Navigation Bar */
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            background-color: #333;
-            padding: 10px;
-        }
+    .container {
+      text-align: center;
+      padding: 20px;
+    }
 
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            padding: 10px;
-        }
+    .header {
+      font-size: 2rem;
+      color: #333;
+      margin-bottom: 20px;
+    }
 
-        .menu-btn {
-            display: none; /* Hide on desktop */
-            background: none;
-            border: none;
-            font-size: 24px;
-            color
+    .content {
+      font-size: 1.2rem;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .button {
+      padding: 15px 30px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Desktop */
+    @media (min-width: 1024px) {
+      .container {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      .header {
+        font-size: 3rem;
+      }
+
+      .content {
+        font-size: 1.5rem;
+      }
+
+      .button {
+        font-size: 1.2rem;
+        padding: 20px 40px;
+      }
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+      .header {
+        font-size: 1.5rem;
+      }
+
+      .content {
+        font-size: 1rem;
+      }
+
+      .button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">Responsive Web Design</div>
+    <div class="content">This layout changes depending on your screen size. Try resizing the browser or use a mobile device!</div>
+    <button class="button">Click Me</button>
+  </div>
 
 </body>
 
